@@ -13,7 +13,12 @@ dependencies {
   minecraft "com.mojang:minecraft:${project.minecraft_version}"
   mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
   modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-  modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+  modImplementation fabricApi.module("fabric-api-base", project.fabric_version)
+  modImplementation fabricApi.module("fabric-item-group-api-v1", project.fabric_version)
+  modImplementation fabricApi.module("fabric-item-api-v1", project.fabric_version)
+
+  modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
