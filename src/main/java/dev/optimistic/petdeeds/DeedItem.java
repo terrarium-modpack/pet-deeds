@@ -99,7 +99,7 @@ public final class DeedItem extends Item {
     }
 
     if (entity == null) entity = serverWorld.getEntity(petId);
-    if (!(entity instanceof TameableEntity pet)) return reset(stack);
+    if (!(entity instanceof TameableEntity pet)) return ActionResult.FAIL;
     UUID ownerId = pet.getOwnerUuid();
 
 
