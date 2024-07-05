@@ -1,0 +1,6 @@
+{
+  "item.pet_deeds.deed": "Pet Deed",
+  "tag.item.pet_deeds.taming_ingredients": "Taming Ingredients",
+  "pet_deeds.item.deed.tooltip.initialize": "Interact with a pet you own to create the deed",
+  "pet_deeds.item.deed.tooltip.utilize": "Click anywhere to register the pet as yours"
+}

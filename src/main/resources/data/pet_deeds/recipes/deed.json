@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "tag": "pet_deeds:taming_ingredients"
+    }
+  ],
+  "result": {
+    "item": "pet_deeds:deed"
+  }
+}

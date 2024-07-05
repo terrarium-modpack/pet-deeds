@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "pet_deeds",
+  "version": "${version}",
+  "name": "Pet Deeds",
+  "description": "Allows you to create deeds that facilitate the transfer of pet ownership to another player.",
+  "authors": [
+    "OptimisticDev"
+  ],
+  "contact": {
+    "sources": "https://github.com/terrarium-modpack/pet-deeds",
+    "issues": "https://github.com/terrarium-modpack/pet-deeds/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.optimistic.petdeeds.Initializer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "pet_deeds.mixins.json"
+  ]
+}
